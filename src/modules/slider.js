@@ -38,6 +38,10 @@ const slider = () => {
     interval = setInterval(autoPlaySlide, time);
   };
 
+  const stopSlide = () => {
+    clearInterval(interval);
+  };
+
   slider.addEventListener('click', (event) => {
     let target = event.target;
     if (!target.matches('.dot')) {
@@ -60,6 +64,19 @@ const slider = () => {
       nextSlide(table, currentSlide, 'active');
     }
   });
+
+  slider.addEventListener('mouseover', () => {
+    if (event.target.matches('.dot')) {
+      stopSlide();
+    }
+  });
+
+  slider.addEventListener('mouseout', () => {
+    if (event.target.matches('.dot')) {
+      startSlide();
+    }
+  });
+
   startSlide(3000);
 
 };

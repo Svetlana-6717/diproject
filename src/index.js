@@ -5,6 +5,7 @@ import toggleMenu from './modules/toggleMenu';
 import slider from './modules/slider';
 import carousel from './modules/carousel';
 import feedback from './modules/feedback';
+import accordeon from './modules/accordeon';
 
 // popup Callback
 togglePopup();
@@ -16,3 +17,5 @@ slider();
 carousel();
 // feedback
 feedback();
+// accordeon
+accordeon();
