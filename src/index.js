@@ -6,6 +6,7 @@ import slider from './modules/slider';
 import carousel from './modules/carousel';
 import feedback from './modules/feedback';
 import accordeon from './modules/accordeon';
+import btnToTop from './modules/btnToTop';
 
 // popup Callback
 togglePopup();
@@ -19,3 +20,5 @@ carousel();
 feedback();
 // accordeon
 accordeon();
+// btn to top
+btnToTop();

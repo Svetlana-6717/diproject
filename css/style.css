@@ -1233,6 +1233,10 @@ video#video_background {
 	color: #2fab6d;
 }
 
+.toTop {
+  visibility: hidden;
+}
+
 .up {
 	position: fixed;
 	bottom: 50px;
