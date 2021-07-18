@@ -11,7 +11,7 @@ const toggleMenu = () => {
   arr.push(services, faq, contacts);
 
   const scroll = (el, direction) => {
-    let duration = 2000;
+    let duration = 24000;
     let start = new Date().getTime();
 
     const fn = () => {

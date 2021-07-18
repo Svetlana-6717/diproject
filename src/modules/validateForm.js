@@ -7,7 +7,7 @@ const validateForm = () => {
   const errorName = formCallback.querySelector('.error-fio');
   const errorPhone = formCallback.querySelector('.error-tel');
 
-  const regName = /[А-Яа-яЁё]+/;
+  const regName = /^[А-Яа-яЁё]{2,16}$/;
   const regPhone = /\+?[78]\d{10}/;
 
   inputName.addEventListener('blur', () => {
@@ -17,7 +17,6 @@ const validateForm = () => {
       errorName.textContent = 'Недопустимые символы';
       inputName.value = '';
     } else {
-      inputName.value = inputName.value.match(regName);
       inputName.value = inputName.value.trim();
       inputName.value = inputName.value.replace(/( |^)[а-яё]/g, (item) => item.toUpperCase());
       inputName.style.cssText = `border: 2px solid #E3E3E4; margin-bottom: 20px`;
